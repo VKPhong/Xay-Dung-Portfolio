@@ -1,0 +1,139 @@
+/* ------------------ GLOBAL ------------------ */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f9fc;
+  color: #222;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: #0078ff;
+}
+
+a:hover {
+  color: #005ec1;
+}
+
+/* ------------------ HEADER ------------------ */
+.banner {
+  background: linear-gradient(120deg, #0078ff, #00c6ff);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  animation: fadeInDown 1s ease;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+nav li {
+  margin: 10px 15px;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
+
+/* ------------------ INDEX ------------------ */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.btn {
+  display: inline-block;
+  margin: 15px;
+  padding: 10px 20px;
+  background: linear-gradient(120deg, #0078ff, #00c6ff);
+  color: white;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* ------------------ PROFILE PAGE ------------------ */
+.profile-section {
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.gallery img {
+  width: 48%;
+  margin: 1%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: rotate(3deg) scale(1.05);
+}
+
+/* ------------------ FOOTER ------------------ */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f1f1f1;
+  color: #555;
+}
+
+/* ------------------ ANIMATIONS ------------------ */
+@keyframes fadeInUp {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeInDown {
+  from {opacity: 0; transform: translateY(-30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
